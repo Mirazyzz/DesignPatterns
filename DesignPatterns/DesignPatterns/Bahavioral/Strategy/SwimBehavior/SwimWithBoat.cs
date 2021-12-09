@@ -4,9 +4,9 @@ namespace Strategy.SwimBehavior
 {
     class SwimWithBoat : ISwimBehavior
     {
-        public void Swim(double swimSpeed)
+        public void Swim()
         {
-            Console.WriteLine($"Swimming on boat with speed {swimSpeed}");
+            Console.WriteLine($"Swimming on boat with speed");
         }
     }
 }

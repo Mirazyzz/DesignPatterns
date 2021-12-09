@@ -2,6 +2,6 @@
 {
     interface ISwimBehavior
     {
-        void Swim(double swimSpeed);
+        void Swim();
     }
 }

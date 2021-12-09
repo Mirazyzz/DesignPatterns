@@ -9,12 +9,32 @@ namespace Strategy
     {
         static void Main(string[] args)
         {
-            BaseDuck mallardDuck = new MallardDuck("cute mallard", 24.5, 50, new FlyNoWay(), new MuteQuack(), new SwimUnderWater());
+            // Initializing mallard duck
+            BaseDuck duck = new MallardDuck("Cute john", new FlyRocketPowered(), new Squeak(), new SwimUnderWater());
 
-            mallardDuck.Display();
-            mallardDuck.Fly();
-            mallardDuck.Swim();
-            mallardDuck.Quack();
+            duck.Display();
+            duck.Fly();
+            duck.Quack();
+            duck.Swim();
+            System.Console.WriteLine();
+
+            // Changing duck's fly, quack, swim behaviors
+            duck.SetFlyBehavior(new FlyWithWings());
+            duck.SetQuackBehavior(new MuteQuack());
+            duck.SetSwimBehavior(new SwimWithBoat());
+
+            duck.Display();
+            duck.Fly();
+            duck.Quack();
+            duck.Swim();
+            System.Console.WriteLine();
+
+            // reassining duck to another subtype with new behaviors
+            duck = new RubberDuck("Toy Steve", new FlyNoWay(), new Quack(), new SwimUnderWater());
+            duck.Display();
+            duck.Fly();
+            duck.Quack();
+            duck.Swim();
         }
     }
 }

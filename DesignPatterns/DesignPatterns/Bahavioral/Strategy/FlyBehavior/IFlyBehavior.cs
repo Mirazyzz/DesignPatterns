@@ -2,6 +2,6 @@
 {
     interface IFlyBehavior
     {
-        void Fly(double flySpeed);
+        void Fly();
     }
 }

@@ -10,8 +10,6 @@ namespace Strategy.Duck
     abstract class BaseDuck
     {
         protected virtual string Name { get; set; }
-        protected virtual double FlySpeed { get; set; }
-        protected virtual double SwimSpeed { get; set; }
 
         #region Behaviors
 
@@ -21,15 +19,13 @@ namespace Strategy.Duck
 
         #endregion
 
-        public BaseDuck(string name, double flySpeed, double swimSpeed)
+        public BaseDuck(string name)
         {
             Name = name;
-            FlySpeed = flySpeed;
-            SwimSpeed = swimSpeed;
         }
 
-        public BaseDuck(string name, double flySpeed, double swimSpeed, IFlyBehavior flyBehavior, IQuackBehavior quackBehavior, ISwimBehavior swimBehavior)
-            : this(name, flySpeed, swimSpeed)
+        public BaseDuck(string name, IFlyBehavior flyBehavior, IQuackBehavior quackBehavior, ISwimBehavior swimBehavior)
+            : this(name)
         {
             FlyBehavior = flyBehavior;
             QuackBehavior = quackBehavior;
@@ -40,7 +36,7 @@ namespace Strategy.Duck
 
         public virtual void Swim()
         {
-            SwimBehavior.Swim(SwimSpeed);
+            SwimBehavior.Swim();
         }
         public virtual void Quack()
         {
@@ -48,7 +44,7 @@ namespace Strategy.Duck
         }
         public virtual void Fly()
         {
-            FlyBehavior.Fly(FlySpeed);
+            FlyBehavior.Fly();
         }
         
         public virtual void SetFlyBehavior(IFlyBehavior flyBehavior)

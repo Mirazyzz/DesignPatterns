@@ -4,9 +4,9 @@ namespace Strategy.FlyBehavior
 {
     class FlyWithWings : IFlyBehavior
     {
-        public void Fly(double flySpeed)
+        public void Fly()
         {
-            Console.WriteLine($"I'm flying high with speed {flySpeed}!");
+            Console.WriteLine($"I'm flying high!");
         }
     }
 }

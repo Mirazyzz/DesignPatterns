@@ -9,19 +9,19 @@ namespace Strategy.Duck
     class RedheadDuck : BaseDuck
     {
 
-        public RedheadDuck(string name, double flySpeed, double swimSpeed)
-            : base(name: name, flySpeed: flySpeed, swimSpeed: swimSpeed)
+        public RedheadDuck(string name)
+            : base(name: name)
         {
         }
 
-        public RedheadDuck(string name, double flySpeed, double swimSpeed, IFlyBehavior flyBehavior, IQuackBehavior quackBehavior, ISwimBehavior swimBehavior)
-            : base(name: name, flySpeed: flySpeed, swimSpeed: swimSpeed, flyBehavior: flyBehavior, quackBehavior: quackBehavior, swimBehavior: swimBehavior)
+        public RedheadDuck(string name, IFlyBehavior flyBehavior, IQuackBehavior quackBehavior, ISwimBehavior swimBehavior)
+            : base(name: name, flyBehavior: flyBehavior, quackBehavior: quackBehavior, swimBehavior: swimBehavior)
         {
         }
 
         public override void Display()
         {
-            Console.WriteLine($"I'm {Name} readhead duck, I can swim with speed: {SwimSpeed} and fly with speed: {FlySpeed}");
+            Console.WriteLine($"I'm {Name} readhead duck.");
         }
 
     }
