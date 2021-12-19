@@ -1,6 +1,6 @@
 ﻿namespace FactoryMethod.Pizza.NYStylePizza
 {
-    class NYStylePizzaBase : PizzaBase
+    abstract class NYStylePizzaBase : PizzaBase
     {
         public NYStylePizzaBase()
         {
