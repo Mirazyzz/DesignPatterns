@@ -1,15 +1,15 @@
 ﻿using System;
 using AbstractFactory.Interfaces;
 
-namespace AbstractFactory.Pizza
+namespace AbstractFactory.Pizzas
 {
-    class ClamPizza : PizzaBase
+    class VeggiePizza : PizzaBase
     {
-        public ClamPizza(IIngredientFactory factory, string name)
+        public VeggiePizza(IIngredientFactory factory, string name)
             : base(factory, name)
         {
-        }
 
+        }
         protected internal override void Prepare()
         {
             Console.WriteLine($"Preparing {PizzaName}...");
@@ -17,7 +17,7 @@ namespace AbstractFactory.Pizza
             Dough = _ingredientFactory.GetDough();
             Sauce = _ingredientFactory.GetSauce();
             Cheese = _ingredientFactory.GetCheese();
-            Clam = _ingredientFactory.GetClam();
+            Toopings = _ingredientFactory.GetToopings();
 
             Bake();
             Cut();
@@ -26,7 +26,7 @@ namespace AbstractFactory.Pizza
 
         public override string ToString()
         {
-            return $"{PizzaName} with {Dough}, {Sauce}, {Cheese} and {Clam}";
+            return $"{PizzaName} with {Dough}, {Sauce}, {Cheese}, {string.Join(", ", Toopings)}";
         }
     }
 }

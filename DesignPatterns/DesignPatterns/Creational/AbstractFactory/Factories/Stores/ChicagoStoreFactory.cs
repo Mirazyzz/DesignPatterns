@@ -1,7 +1,7 @@
 ﻿using AbstractFactory.enums;
 using AbstractFactory.Factories.Ingredients;
 using AbstractFactory.Interfaces;
-using AbstractFactory.Pizza;
+using AbstractFactory.Pizzas;
 
 using System;
 

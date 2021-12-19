@@ -1,22 +1,23 @@
 ﻿using System;
 using AbstractFactory.Interfaces;
 
-namespace AbstractFactory.Pizza
+namespace AbstractFactory.Pizzas
 {
-    class CheesePizza : PizzaBase
+    class ClamPizza : PizzaBase
     {
-        public CheesePizza(IIngredientFactory factory, string name)
+        public ClamPizza(IIngredientFactory factory, string name)
             : base(factory, name)
         {
         }
 
         protected internal override void Prepare()
         {
-            Console.WriteLine($"Preparing pizza: {PizzaName}");
+            Console.WriteLine($"Preparing {PizzaName}...");
 
             Dough = _ingredientFactory.GetDough();
             Sauce = _ingredientFactory.GetSauce();
             Cheese = _ingredientFactory.GetCheese();
+            Clam = _ingredientFactory.GetClam();
 
             Bake();
             Cut();
@@ -25,7 +26,7 @@ namespace AbstractFactory.Pizza
 
         public override string ToString()
         {
-            return $"{PizzaName} with {Dough}, {Sauce} and {Cheese}";
+            return $"{PizzaName} with {Dough}, {Sauce}, {Cheese} and {Clam}";
         }
     }
 }
