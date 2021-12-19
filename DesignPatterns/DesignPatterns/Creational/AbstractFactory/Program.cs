@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AbstractFactory.enums;
+using AbstractFactory.Factories.Stores;
+using AbstractFactory.Interfaces;
 
 namespace AbstractFactory
 {
@@ -6,7 +8,14 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            StoreFactory nyStore = new NYStoreFactory();
+            StoreFactory chicagoStore = new ChicagoStoreFactory();
+
+            nyStore.OrderPizza(PizzaType.Cheese);
+            nyStore.OrderPizza(PizzaType.Veggie);
+
+            chicagoStore.OrderPizza(PizzaType.Clam);
+            chicagoStore.OrderPizza(PizzaType.Pepperoni);
         }
     }
 }

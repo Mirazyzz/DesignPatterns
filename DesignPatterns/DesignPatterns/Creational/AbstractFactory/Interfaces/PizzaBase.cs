@@ -43,6 +43,5 @@ namespace AbstractFactory.Interfaces
             Console.WriteLine($"Your {this} is ready!");
             Console.WriteLine();
         }
-
     }
 }

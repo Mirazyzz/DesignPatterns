@@ -6,7 +6,7 @@ namespace AbstractFactory.Ingredients.ChicagoIngredients
     {
         public override string ToString()
         {
-            return "Mozzarela ICheese";
+            return "Mozzarela Cheese";
         }
     }
 }

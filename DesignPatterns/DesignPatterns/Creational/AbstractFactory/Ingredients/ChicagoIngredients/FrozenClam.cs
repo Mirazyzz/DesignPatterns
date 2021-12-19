@@ -6,7 +6,7 @@ namespace AbstractFactory.Ingredients.ChicagoIngredients
     {
         public override string ToString()
         {
-            return "Frozen IClam";
+            return "Frozen Clam";
         }
     }
 }

@@ -6,7 +6,7 @@ namespace AbstractFactory.Ingredients.NYIngredients
     {
         public override string ToString()
         {
-            return "Reggiano ICheese";
+            return "Reggiano Cheese";
         }
     }
 }

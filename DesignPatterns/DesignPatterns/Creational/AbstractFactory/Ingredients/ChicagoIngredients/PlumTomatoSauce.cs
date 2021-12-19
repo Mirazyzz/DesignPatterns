@@ -6,7 +6,7 @@ namespace AbstractFactory.Ingredients.ChicagoIngredients
     {
         public override string ToString()
         {
-            return "Plum Tomato ISauce";
+            return "Plum Tomato Sauce";
         }
     }
 }

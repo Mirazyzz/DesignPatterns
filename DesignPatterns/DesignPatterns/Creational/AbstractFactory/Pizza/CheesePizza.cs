@@ -22,5 +22,10 @@ namespace AbstractFactory.Pizza
             Cut();
             Box();
         }
+
+        public override string ToString()
+        {
+            return $"{PizzaName} with {Dough}, {Sauce} and {Cheese}";
+        }
     }
 }

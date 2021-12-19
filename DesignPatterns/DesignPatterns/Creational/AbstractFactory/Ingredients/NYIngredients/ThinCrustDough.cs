@@ -6,7 +6,7 @@ namespace AbstractFactory.Ingredients.NYIngredients
     {
         public override string ToString()
         {
-            return "Thin Crust IDough";
+            return "Thin Crust Dough";
         }
     }
 }
