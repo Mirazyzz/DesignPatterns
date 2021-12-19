@@ -1,6 +1,6 @@
 ﻿namespace AbstractFactory.Interfaces.Ingredients
 {
-    interface IDough : IIngredientBase
+    abstract class Cheese : IngredientBase
     {
     }
 }

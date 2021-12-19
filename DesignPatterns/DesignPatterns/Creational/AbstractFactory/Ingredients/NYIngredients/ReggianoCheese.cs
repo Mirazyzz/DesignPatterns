@@ -2,7 +2,7 @@
 
 namespace AbstractFactory.Ingredients.NYIngredients
 {
-    class ReggianoCheese : ICheese
+    class ReggianoCheese : Cheese
     {
         public override string ToString()
         {

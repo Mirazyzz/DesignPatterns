@@ -1,7 +1,6 @@
 ﻿namespace AbstractFactory.Interfaces.Ingredients
 {
-    interface IIngredientBase
+    abstract class Sauce : IngredientBase
     {
-        string ToString();
     }
 }

@@ -2,7 +2,7 @@
 
 namespace AbstractFactory.Ingredients.NYIngredients
 {
-    class MarinaraSauce : ISauce
+    class MarinaraSauce : Sauce
     {
         public override string ToString()
         {

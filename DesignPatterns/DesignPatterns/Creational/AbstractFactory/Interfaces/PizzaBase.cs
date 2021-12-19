@@ -11,12 +11,12 @@ namespace AbstractFactory.Interfaces
 
         public string PizzaName { get; protected set; }
 
-        public IDough Dough { get; protected set; }
-        public ISauce Sauce { get; protected set; }
-        public ICheese Cheese { get; protected set; }
-        public IPepperoni Pepperoni { get; protected set; }
-        public IClam Clam { get; protected set; }
-        public List<ITooping> Toopings { get; protected set; }
+        public Dough Dough { get; protected set; }
+        public Sauce Sauce { get; protected set; }
+        public Cheese Cheese { get; protected set; }
+        public Pepperoni Pepperoni { get; protected set; }
+        public Clam Clam { get; protected set; }
+        public List<Tooping> Toopings { get; protected set; }
 
         public PizzaBase(IIngredientFactory factory, string name)
         {

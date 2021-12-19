@@ -1,8 +1,8 @@
 ﻿using AbstractFactory.Interfaces.Ingredients;
 
-namespace AbstractFactory.Ingredients.NYIngredients.Toopings
+namespace AbstractFactory.Ingredients.CaliforniaIngredients.Toopings
 {
-    class Garlic : Tooping
+    internal class Garlic : Tooping
     {
         public override string ToString()
         {

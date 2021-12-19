@@ -2,7 +2,7 @@
 
 namespace AbstractFactory.Ingredients.NYIngredients
 {
-    class FreshClam : IClam
+    class FreshClam : Clam
     {
         public override string ToString()
         {

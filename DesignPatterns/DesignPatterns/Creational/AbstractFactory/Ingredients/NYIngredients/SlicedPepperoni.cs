@@ -2,7 +2,7 @@
 
 namespace AbstractFactory.Ingredients.NYIngredients
 {
-    class SlicedPepperoni : IPepperoni
+    class SlicedPepperoni : Pepperoni
     {
         public override string ToString()
         {

@@ -1,6 +1,6 @@
 ﻿namespace AbstractFactory.Interfaces.Ingredients
 {
-    interface ISauce : IIngredientBase
+    abstract class Clam : IngredientBase
     {
     }
 }

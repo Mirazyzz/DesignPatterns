@@ -2,7 +2,7 @@
 
 namespace AbstractFactory.Ingredients.ChicagoIngredients
 {
-    class ThickCrustDough : IDough
+    class ThickCrustDough : Dough
     {
         public override string ToString()
         {

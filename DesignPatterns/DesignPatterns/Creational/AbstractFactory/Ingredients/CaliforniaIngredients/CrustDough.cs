@@ -1,12 +1,12 @@
 ﻿using AbstractFactory.Interfaces.Ingredients;
 
-namespace AbstractFactory.Ingredients.NYIngredients
+namespace AbstractFactory.Ingredients.CaliforniaIngredients
 {
-    class ThinCrustDough : Dough
+    class CrustDough : Dough
     {
         public override string ToString()
         {
-            return "Thin Crust Dough";
+            return "Crust Dough";
         }
     }
 }

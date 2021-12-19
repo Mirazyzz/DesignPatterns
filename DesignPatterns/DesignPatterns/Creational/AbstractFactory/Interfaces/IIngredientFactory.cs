@@ -5,11 +5,11 @@ namespace AbstractFactory.Interfaces
 {
     interface IIngredientFactory
     {
-        public IDough GetDough();
-        public ISauce GetSauce();
-        public ICheese GetCheese();
-        public IPepperoni GetPepperoni();
-        public IClam GetClam();
-        public List<ITooping> GetToopings();
+        public Dough GetDough();
+        public Sauce GetSauce();
+        public Cheese GetCheese();
+        public Pepperoni GetPepperoni();
+        public Clam GetClam();
+        public List<Tooping> GetToopings();
     }
 }

@@ -9,17 +9,17 @@ namespace AbstractFactory.Factories.Ingredients
 {
     class ChicagoIngredientFactory : IIngredientFactory
     {
-        public ICheese GetCheese() => new MozzarelaCheese();
+        public Cheese GetCheese() => new MozzarelaCheese();
 
-        public IClam GetClam() => new FrozenClam();
+        public Clam GetClam() => new FrozenClam();
 
-        public IDough GetDough() => new ThickCrustDough();
+        public Dough GetDough() => new ThickCrustDough();
 
-        public IPepperoni GetPepperoni() => new SlicedPepperoni();
+        public Pepperoni GetPepperoni() => new SlicedPepperoni();
 
-        public ISauce GetSauce() => new PlumTomatoSauce();
+        public Sauce GetSauce() => new PlumTomatoSauce();
 
-        public List<ITooping> GetToopings() => new List<ITooping>()
+        public List<Tooping> GetToopings() => new List<Tooping>()
         {
             new BlackOlives(),
             new EggPlant(),

@@ -2,7 +2,7 @@
 
 namespace AbstractFactory.Ingredients.NYIngredients.Toopings
 {
-    class Mushroom : ITooping
+    class Mushroom : Tooping
     {
         public override string ToString()
         {
