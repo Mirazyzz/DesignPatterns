@@ -1,8 +1,5 @@
 ﻿using FactoryMethod.Pizza;
 using FactoryMethod.Pizza.NYStylePizza;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace FactoryMethod.PizzaStore
 {

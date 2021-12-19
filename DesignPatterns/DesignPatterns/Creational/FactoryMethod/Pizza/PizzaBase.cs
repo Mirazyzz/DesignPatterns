@@ -25,12 +25,21 @@ namespace FactoryMethod.Pizza
             Console.WriteLine($"Preparing: {Name}...");
             Console.WriteLine($"Tossing dough...");
             Console.WriteLine($"Adding suace... ");
-            Console.WriteLine($"Adding toopings: ");
+            Console.Write($"Adding toopings: ");
 
-            foreach(string tooping in Toopings)
+            for(int i = 0; i < Toopings.Count; i++)
             {
-                Console.Write($"{tooping} ");
+                if(i == 0)
+                {
+                    Console.Write($" {Toopings[i]}");
+                }
+                else
+                {
+                    Console.Write($", {Toopings[i]}");
+                }
             }
+
+            Console.WriteLine();
         }
 
         public virtual void Bake()
@@ -46,6 +55,15 @@ namespace FactoryMethod.Pizza
         public virtual void Box()
         {
             Console.WriteLine("Place pizza in official PizzaStore box.");
+        }
+
+        #endregion
+
+        #region override Object methods
+
+        public override string ToString()
+        {
+            return $"Pizza: {Name}, Dough: {Dough}, Sauce: {Sauce}, Toopings: {string.Join(",", Toopings)}";
         }
 
         #endregion

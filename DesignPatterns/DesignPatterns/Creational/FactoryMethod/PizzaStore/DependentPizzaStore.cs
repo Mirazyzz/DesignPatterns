@@ -14,7 +14,7 @@ namespace FactoryMethod.PizzaStore
             style = style.ToLower();
             type = type.ToLower();
 
-            if(style.Equals("ny") || style.StartsWith("ny"))
+            if (style.Equals("ny") || style.StartsWith("ny"))
             {
                 if (type.Equals("cheese"))
                 {
